@@ -1,0 +1,29 @@
+lib/
+!test/lib/
+!src/component/widget/lib/
+scratch/
+static/js/app.js
+static/js/deps.js
+static/govuk-fco-etd/js/app.js
+static/govuk-fco-etd/js/deps.js
+dump.rdb
+access.*
+application.*
+
+# npm-generated files
+node_modules/
+npm-debug.log
+
+# IntelliJ project files
+.idea/
+*.iml
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
+
+# macOS junk files
+.DS_Store
+
+# Dreamweaver project files
+_notes
