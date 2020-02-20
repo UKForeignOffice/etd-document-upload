@@ -1,0 +1,552 @@
+/* SCSS Document */
+h1.heading-large {
+  margin-top: 15px; }
+
+.feature-blue-container {
+  background-color: #005ea5;
+  color: #fff;
+  padding: 30px;
+  margin-top: 20px; }
+
+.feature-blue-container h1 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.feature-blue-container .heading-medium {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.feature-blue-container a:link, .feature-blue-container a:visited, .feature-blue-container a:active {
+  text-decoration: underline;
+  color: #fff; }
+
+.feature-blue-container a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+.feature-blue-container a.flash-card {
+  margin-top: 20px !important; }
+
+.feature-blue-container a.button {
+  text-decoration: none;
+  background-color: #eee;
+  border: 1px solid #003366;
+  margin-top: 70px;
+  color: #003366; }
+
+.feature-blue-container a.button:hover {
+  background-color: #fff; }
+
+.feature-blue-container .panel-indent {
+  border-color: #4091CF; }
+
+.feature-blue-container a.button {
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important; }
+
+.feature-blue-container .indented {
+  margin-left: 28px; }
+
+.add-title-margin {
+  margin-top: 50px; }
+
+.note {
+  font-size: 0.8em; }
+
+.photo-upload-image img {
+  width: 100%;
+  height: 100%; }
+
+.ref-upload-preview {
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: right; }
+
+.ref-upload-photo-preview {
+  width: 300px;
+  margin-bottom: 20px; }
+
+iframe.photo-result {
+  overflow: hidden; }
+
+.column-img, .column-img-trans {
+  width: 100%; }
+
+.column-img-trans {
+  width: 40%;
+  height: auto; }
+
+.column-third {
+  float: right; }
+
+.button-right {
+  width: 100%;
+  text-align: right; }
+
+.button-right-float {
+  float: right;
+  min-width: 200px;
+  margin-bottom: 20px; }
+
+a.previousarrowleft {
+  padding-left: 30px;
+  background-image: url("../img/arrow-pagination-left.svg");
+  background-position: 0 3px;
+  background-repeat: no-repeat;
+  font-size: 0.9em;
+  background-size: 20px 15px; }
+
+#global-header .header-proposition #proposition-name {
+  font-size: 18px; }
+
+#proposition-menu {
+  text-align: right;
+  margin-right: 5px; }
+
+.centered {
+  text-align: center; }
+
+.panel-border-narrow {
+  border-left-width: 3px; }
+
+.panel {
+  border-color: #ccc;
+  padding-left: 20px;
+  margin-top: 20px; }
+
+.button-start,
+.button-get-started {
+  background-image: url("../img/icon-pointer.png") !important;
+  background-size: 30px auto;
+  background-position: right 14px; }
+
+.indented {
+  margin-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 30px; }
+
+#validationSummary {
+  display: inline-block; }
+
+.codetodo {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px; }
+
+.button.disabled {
+  background-color: #666666; }
+
+.button.disabled:hover {
+  background-color: #666666 !important; }
+
+.referencenumber {
+  font-weight: bold;
+  padding: 5px;
+  background-color: #28A197;
+  color: #fff; }
+
+.case-upper {
+  text-transform: uppercase; }
+
+.govuk-taxonomy-sidebar {
+  border-top: 10px solid #005ea5; }
+
+.steps-status {
+  padding: 5px;
+  background-color: #005ea5;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 150px;
+  float: right;
+  margin-top: -3px;
+  font-weight: bold;
+  text-align: center; }
+
+.summarytitle {
+  font-weight: bold; }
+
+.termsandconditions {
+  font-size: 0.75em; }
+
+.progressbar {
+  background-color: #E9E9E9;
+  padding: 5px;
+  margin-top: 5px;
+  padding-left: 5px;
+  color: #333;
+  font-size: 0.75em;
+  background-image: url(../img/progressbar-edge-grey.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 10%;
+  padding-right: 30px; }
+
+.progressbar-blue {
+  color: #fff;
+  background-image: url(../img/progressbar-edge-blue.png);
+  background-color: #005ea5;
+  font-weight: bold; }
+
+.progressbar-end {
+  background-image: none; }
+
+.floatright {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+.photoguideimg {
+  width: 100%; }
+
+.guidance-photos {
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.guidance-photos ul li {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  min-width: 120px;
+  max-width: 188px;
+  margin-bottom: 1.05263em;
+  padding-left: 8px; }
+
+.guidance-photos ul {
+  margin-left: -8px; }
+
+.guidance-photos img {
+  width: 100%;
+  vertical-align: bottom; }
+
+.guidance-photos .result {
+  font-size: 14px;
+  line-height: 1.42857; }
+
+.guidance-photos .result {
+  position: absolute;
+  bottom: 4px;
+  left: 12px;
+  width: 92%;
+  height: 57px;
+  background: #fff;
+  font-family: "nta",Arial,sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  opacity: 0.9; }
+
+.guidance-photos ul div {
+  float: left; }
+
+.guidance-photos .result .approved, .guidance-photos .result .failed {
+  position: absolute;
+  top: 50%;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+.guidance-photos .result .approved {
+  background-image: url("../img/photoguide/icon-thick-tick.svg"); }
+
+.guidance-photos .result .failed {
+  background-image: url("../img/photoguide/icon-thick-cross.svg"); }
+
+.guidance-photos .result .approved, .guidance-photos .result .failed {
+  padding-top: 11px;
+  padding-right: 34px;
+  padding-bottom: 8px;
+  background-size: 22px; }
+
+.guidance-photos .result .approved, .guidance-photos .result .failed {
+  margin: 0;
+  padding: 8px 28px 5px 8px;
+  padding-top: 8px;
+  padding-right: 28px;
+  padding-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+  background-size: 18px; }
+
+a:link, button, .button {
+  transition: background .3s ease-out;
+  -moz-transition: background .3s ease-out;
+  -webkit-transition: background .3s ease-out;
+  -o-transition: background .3s ease-out;
+  border-radius: 2px; }
+
+.backButton a:link {
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s; }
+
+.backButton {
+  margin-top: 10px; }
+
+.backButton a:link, .backButton a:visited .backButton a:active {
+  text-decoration: none;
+  font-size: 0.8em;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 3px;
+  font-weight: 200; }
+
+.backButton a:hover {
+  color: #669933; }
+
+.backButton img {
+  width: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 10px; }
+
+.icon-inline {
+  height: auto;
+  width: 22px;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.icon-important {
+  background-image: url("/govuk/img/icons/icon-important.png"); }
+
+.togglelink {
+  margin-top: 10px; }
+
+.togglelink a:link, .togglelink a:visited {
+  color: #005ea5 !important;
+  background-image: url("../img/icon-progressive-arrow.png");
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: 1px 7px;
+  background-size: 8px 10px; }
+
+.togglelink a:active, .togglelink a:focus {
+  color: #2e8aca !important;
+  background-image: url("../img/icon-progressive-arrow-down.png"); }
+
+.togglelink a:hover {
+  color: #2e8aca !important; }
+
+.togglelink-internal {
+  background-image: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.photo-upload-preview img.photo-preview {
+  width: 250px;
+  height: auto; }
+
+.photo-upload-preview .spinner, .photo-upload-preview #spinner {
+  display: block;
+  width: 16px !important;
+  margin-left: 112px;
+  margin-top: 112px; }
+
+.spinner {
+  vertical-align: top;
+  margin-left: 10px;
+  display: none;
+  height: auto;
+  width: 16px !important;
+  padding-top: 3px; }
+
+button:focus, button:active,
+a:focus, a:active,
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  background-color: transparent; }
+
+/* NICER WEB FRIENDLY GREEN
+
+.button, .button:link, .button:visited {
+    background-color: #577502;
+}
+
+.button:active, .button:hover, .button:focus  {
+    background-color: #4A6401;
+}
+*/
+.pdf-application {
+  margin-top: 20px; }
+
+.pdf-application img {
+  width: 70px;
+  height: auto;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.pdfbutt:link, .pdfbutt:visited, .pdfbutt:active {
+  background-color: #555;
+  border: none;
+  margin-right: 0px; }
+
+.pdfbutt:hover {
+  background-color: #003A66; }
+
+.pdfbutt img {
+  width: 10px;
+  height: auto;
+  margin-right: 8px; }
+
+.pdfbutt img {
+  width: 10px;
+  height: auto;
+  margin-right: 8px; }
+
+#global-header #logo :focus, #global-header #logo:active {
+  color: #fff; }
+
+#validationSummary {
+  border: 3px solid #b10e1e; }
+
+#validationSummary a:link, #validationSummary a:visited, #validationSummary a:active {
+  color: #b10e1e !important; }
+
+.error, .error-summary, .error .form-control {
+  border-left: 3px solid #b10e1e; }
+
+.form-label,
+.form-label-bold {
+  font-weight: bold !important; }
+
+.file-upload-form {
+  margin-top: 20px;
+  position: relative; }
+
+.otherinfosection .othersection {
+  margin-bottom: 40px;
+  clear: both; }
+
+.otherinfosection .sign-impairment-reason {
+  margin-top: 20px; }
+
+.file-upload-form input, .file-upload-form input:visited, .file-upload-form input:active {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 2px;
+  color: #111;
+  font-size: 15px !important;
+  border: 2px solid #ccc;
+  background-color: #e8e8e8;
+  width: 100%; }
+
+.file-upload-form input:hover {
+  background-color: #e5e5e5; }
+
+/*
+.file-upload-form label {
+    font-size: 13px !important;
+    z-index: 3;
+    padding: 0px 20px 0px 40px !important;
+    min-width: 103px;
+    cursor: pointer;
+    text-align: left;
+    color: #fff;
+    font-weight: normal !important;
+    background-color: #005ea5;
+    background-image: url(../img/icon-upload.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 20px 21px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    line-height: 36px;
+    margin-left: 10px;
+}
+
+
+.file-upload-form label:hover {
+    //background-color: #003366;
+}
+
+
+.file-upload-form input#id_photo, .file-upload-form input#id_document {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+*/
+.phase-banner-alpha .phase-tag, .phase-banner-beta .phase-tag {
+  margin-bottom: 10px; }
+
+input[type="text"] {
+  border: 2px solid #222222;
+  padding: 5px;
+  margin-top: 3px; }
+
+.form-hint {
+  font-size: 16px !important; }
+
+.upload input {
+  background-color: #fff;
+  border: 2px solid #333;
+  padding: 20px; }
+
+.upload input:hover {
+  background-color: #F8F8F8; }
+
+#footer {
+  border-top: 10px solid #005ea5; }
+
+.showfordesktop {
+  display: block; }
+
+.showformobile {
+  display: none; }
+
+@media screen and (max-width: 640px) {
+  .button-start, .button-get-started {
+    background-image: none !important; }
+  .button-right-float {
+    float: none;
+    min-width: 200px;
+    margin-bottom: 20px; }
+  .ref-upload-preview {
+    margin-left: 0;
+    float: none;
+    width: 100%; } }
+
+@media screen and (max-width: 770px) {
+  #proposition-menu {
+    text-align: left; }
+  .hide-small {
+    display: none; }
+  .showfordesktop {
+    display: none; }
+  .showformobile {
+    display: block; }
+  .column-third {
+    float: none; }
+  .add-title-margin {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 1000px) {
+  .progressbar {
+    background-image: none;
+    min-width: 4%; }
+  .progressbar-blue {
+    background-image: url("../img/progressbar-completed-tick.svg"); } }

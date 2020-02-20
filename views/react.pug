@@ -1,0 +1,11 @@
+extends base
+
+block content
+  div#app
+    != html
+  script window.__PROPS__ = !{props}
+  script window.__CONFIG__ = !{config}
+  <!--[if lte IE 9]><!-->
+  script(src='/govuk-fco-etd/js/deps.js')
+  script(src='/govuk-fco-etd/js/app.js')
+  <!--<![endif]-->

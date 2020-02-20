@@ -1,0 +1,121 @@
+doctype html
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+head
+    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+
+    title=title
+
+    script="if (self == top) { document.documentElement.style.display = 'block';} else { top.location = self.location; }"
+    
+    script(type="text/javascript").
+        (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+
+    <!--[if gt IE 8]><!--><link href="/govuk/css/govuk-template.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if IE 6]><link href="/govuk/css/govuk-template-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="/govuk/css/govuk-template-ie7.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="/govuk/css/govuk-template-ie8.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+    link(href="/govuk/css/govuk-template-print.css", media="print", rel="stylesheet", type="text/css")
+
+
+
+    <!--[if IE 8]>
+    script(type="text/javascript").
+        (function(){if(window.opera){return;}
+            setTimeout(function(){var a=document,g,b={families:(g=
+                            ["nta"]),urls:["{{{ assetPath }}}stylesheets/fonts-ie8.css"]},
+                    c="{{{ assetPath }}}javascripts/vendor/goog/webfont-debug.js",d="script",
+                    e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+                    ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+                    .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+        })()
+    <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    link(href="/govuk/css/fonts.css", media="all", rel="stylesheet", type="text/css")
+    <!--<![endif]-->
+
+    <!--[if gt IE 8]><!--><link href="/govuk/css/elements-page.css"  rel="stylesheet" type="text/css"><!--<![endif]-->
+    <!--[if IE 6]><link href="/govuk/css/elements-page-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="/govuk/css/elements-page-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="/govuk/css/elements-page-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <!--[if lt IE 9]>
+    script(src="/govuk/js/ie.js", type="text/javascript")
+    <![endif]-->
+
+    script(type="text/javascript").
+        document.onclick = function (event) {
+            var eventSource = event.target || event.srcElement
+            var inputs = document.getElementsByTagName('input')
+
+            var handleStyling = function () {
+                var fldOptions = document.getElementsByName(this.name)
+                for (var index = 0; index < fldOptions.length; index++) {
+                    var parentLabel = fldOptions[index].parentElement
+                    if (fldOptions[index].checked) {
+                        if (parentLabel.className.indexOf('selected') === -1) {
+                            parentLabel.className = parentLabel.className + ' selected'
+                        }
+                    } else {
+                        parentLabel.className = parentLabel.className.replace('selected', '')
+                    }
+                }
+            }
+
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].type === 'radio') {
+                    inputs[i].addEventListener("click", function () {
+                        handleStyling.call(this)
+                    }, 0)
+                }
+                if (inputs[i].type === 'checkbox') {
+                    if(inputs[i].checked){
+                        var parentLabel = inputs[i].parentElement
+                        if (parentLabel.className.indexOf('selected') === -1) {
+                            parentLabel.className = parentLabel.className + ' selected'
+                        }
+                    }
+                    inputs[i].addEventListener("click", function () {
+                        handleStyling.call(this)
+                    }, 0)
+                }
+            }
+            if(eventSource.nodeName ==='INPUT'
+                    && eventSource.type === 'radio'
+                    && eventSource.parentElement.nodeName ==='LABEL'){
+                eventSource.parentElement.click()
+            }
+        }
+
+
+    link(rel="shortcut icon", href="/govuk/img/favicon.ico", type="image/x-icon")
+
+    <!-- Size for iPad and iPad mini (high resolution) -->
+    link(rel="apple-touch-icon-precomposed", sizes="152x152", href="/govuk/img/apple-touch-icon-152x152.png")
+    <!-- Size for iPhone and iPod touch (high resolution) -->
+    link(rel="apple-touch-icon-precomposed", sizes="120x120", href="/govuk/img/apple-touch-icon-120x120.png")
+    <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+    link(rel="apple-touch-icon-precomposed", sizes="76x76", href="/govuk/img/apple-touch-icon-76x76.png")
+    <!-- Default non-defined size, also used for Android 2.1+ devices -->
+    link(rel="apple-touch-icon-precomposed", href="/govuk/img/apple-touch-icon-60x60.png")
+
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(property="og:image", content="/govuk/img/opengraph-image.png")
+
+    link(href="/govuk-fco-etd/css/govuk-etd-template.css", rel="stylesheet", type="text/css")
+    link(href="/css/etdonline-specific.css", rel="stylesheet", type="text/css")
+    link(href="/css/modal-dialog.css", rel="stylesheet", type="text/css")
+
+
+body
+    script(type="text/javascript") document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+    block content
+        != html
+
+    script(src="/govuk/js/govuk-template.js", type="text/javascript")
+    noscript: img(src=piwik, style="border: 0px")

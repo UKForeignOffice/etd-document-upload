@@ -1,0 +1,182 @@
+// Task list pattern
+
+// Override column width for tablet and up
+.column-minimum {
+    @include media(tablet) {
+        min-width: 600px;
+    }
+}
+
+// Spacing to the left of the task list
+$task-list-indent: 35px;
+
+.task-list {
+    margin-top: $gutter;
+    @include media(tablet) {
+        margin-top: ($gutter * 2);
+    }
+}
+
+.task-list-section {
+    display: table;
+    padding-bottom: ($gutter / 6);
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight:bold;
+}
+
+.task-list-section-number {
+    display: table-cell;
+    padding-right: ($gutter / 6);
+
+@include media(tablet) {
+    min-width: $task-list-indent;
+    padding-right: 0;
+  }
+}
+
+.task-list-items {
+    margin-bottom: $gutter;
+    @include media(tablet) {
+    margin-bottom: ($gutter * 2);
+    }
+
+  @include media(tablet) {
+    padding-left: $task-list-indent;
+  }
+}
+
+.task-list-helptext {
+    @include media(tablet) {
+        padding-left: $task-list-indent;
+    }
+}
+
+%contain-floats {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.task-list-item {
+    border-bottom: 1px solid $border-colour;
+    padding-top: $gutter-one-third;
+    padding-bottom: $gutter-one-third;
+    @extend %contain-floats;
+}
+
+.task-list-item:first-child {
+    border-top: 1px solid $border-colour;
+}
+
+.task-name {
+    width: 200px;
+    float: left
+}
+
+.task-completed, .task-cantstartyet, .task-startsection, .task-submitbutton-disabled, .task-submitbutton {
+    font-weight:bold;
+    font-size: .8em !important;
+    line-height: 20px;
+    //text-transform: uppercase;
+    //letter-spacing: 1px;
+    text-decoration: none;
+    color: #111 !important;
+    //background-color: $govuk-blue;
+    display: inline-block;
+    float: right;
+    min-width: 104px;
+    text-align: left;
+    //text-align: center;
+    padding: 7px 0 5px 0;
+    margin-right:5px
+}
+
+.task-submitbutton {
+    color:#fff !important;
+}
+
+.task-cantstartyet, .task-submitbutton-disabled {
+    //background-color: #e8e8e8 !important;
+    color: #888 !important;
+    //border: 1px solid #ccc;    
+}
+
+.task-submitbutton-disabled, .task-cantstartyet, .task-completed {
+    cursor:not-allowed
+}
+
+.task-submitbutton img, .task-submitbutton-disabled img, .task-cantstartyet img, .task-completed img, .task-startsection img  {
+    margin-top:-3px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right:4px
+}
+
+.task-submitbutton-disabled, .task-submitbutton {
+    min-width:200px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.task-submitbutton-disabled {
+    background:#777 !important;
+    background-color:#777;
+    color:#fff !important;
+    cursor:not-allowed !important;
+}
+
+.task-startsection {
+    padding-top:8px;
+    float:right;
+    margin-right:5px;
+    margin-bottom:4px;
+    color:#fff !important;
+}
+
+.tasklist-form-hint {
+    font-size:0.85em !important;
+    width:400px;
+    margin-left:35px;
+    margin-bottom:10px;
+    display:block;
+}
+
+.tasklist-offline-link, .tasklist-offline-link:visited, .tasklist-offline-link:active {
+    text-decoration: none !important;
+    color:#005ea5 !important ;
+    font-weight:normal !important;
+    font-size:14px;
+}
+
+.tasklist-offline-link:hover {
+    color:#00692f !important;
+}
+
+.tasklist-bracket {
+    font-weight:normal;
+    color:#888;
+    font-size:14px;
+        
+}
+
+@media screen and (max-width: 640px) {
+    .task-button, 
+    .task-completed,
+    .task-cantstartyet,
+    .task-startsection{
+        float:left;
+        clear:both;
+        margin-top:5px;
+    }
+    
+    .tasklist-form-hint, .task-startsection {
+        width:100% !important;
+        float:none;
+        display:block;
+        margin-left:0;
+}
+
+}
